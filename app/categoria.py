@@ -15,7 +15,7 @@ from flask_marshmallow import Marshmallow
 app = Flask(__name__)
 # "mariadb+pymysql://user:pass@some_mariadb/dbname?charset=utf8mb4"
 # con anterioridad en PHP Admin con el nombre dbpythonapi
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@localhost:3306/bdpythonapi"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@localhost:3306/python_api_db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db =SQLAlchemy(app)
